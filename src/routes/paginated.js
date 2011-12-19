@@ -1,8 +1,4 @@
-
-/*
- * GET home page.
- */
-var db = require('../db.js');
+var db = require('../db.js').db;
 
 exports.paginated = function(req, res) {
 	db.view('misframe', 'getPosts', {keys: null, limit: 4, skip: 4*req.params.page}, function(e1,r1,h1) {
