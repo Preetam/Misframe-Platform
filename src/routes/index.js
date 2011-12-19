@@ -2,9 +2,7 @@
 /*
  * GET home page.
  */
-var db = require('../db.js').db;
-
-console.log(db);
+var db = require('../db.js');
 
 exports.about = require('./about.js').about;
 exports.singlePost = require('./singlePost.js').singlePost;

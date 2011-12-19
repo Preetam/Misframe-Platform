@@ -1,4 +1,5 @@
 var db = require('../db.js');
+
 exports.singlePost = function(req, res) {
 	db.view('misframe', 'singlePost', {key: parseInt(req.params.id)}, function(e1,r1,h1) {
 		console.log(r1);
