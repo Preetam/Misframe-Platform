@@ -1,7 +1,7 @@
 var db = require('../db.js').db;
 
 exports.paginated = function(req, res) {
-	db.view('misframe', 'getPosts', {keys: null, limit: 4, skip: 4*req.params.page}, function(e1,r1,h1) {
+	db.view('misframe', 'getPosts', {keys: null, limit: 4, skip: 4*req.params.page, descending: true}, function(e1,r1,h1) {
 		var posts = r1.rows;
 		var total = r1.total_rows;
 		for(var i in posts)

@@ -7,7 +7,7 @@ exports.singlePost = require('./singlePost.js').singlePost;
 exports.paginated = require('./paginated.js').paginated;
 
 exports.index = function(req, res) {
-	db.view('misframe', 'getPosts', {keys: null, limit: 4}, function(e1,r1,h1) {
+	db.view('misframe', 'getPosts', {keys: null, limit: 4, descending: true}, function(e1,r1,h1) {
 		if(e1)
 			console.log(e1);
 
