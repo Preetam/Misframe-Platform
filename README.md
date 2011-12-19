@@ -10,6 +10,7 @@ Node, NPM, CouchDB. That's pretty much it. I'm using CouchDB 1.0.1.
 Document format.
 ----------------
 This is the actual first post:
+
 	{
 	   "_id": "post-1",
 	   "_rev": "30-e692c1753c626c6cef61990a173427d0",
