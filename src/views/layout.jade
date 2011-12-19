@@ -1,0 +1,36 @@
+!!! 5
+html
+	head
+		title= title
+		| <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=1;' name='viewport' />
+		| <meta name="viewport" content="width=device-width" />
+		link(rel='stylesheet', href='/stylesheets/reset.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic')
+		| <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+
+	body
+		div(id='container')
+			div(id='top')
+				a(href='/')
+					h1 Misframe
+				h2 Some witty tagline will go here
+				div(id='menu')
+					a(href='/about') About
+			
+			!= body
+			div(id='footer') Copyright &copy; Preetam Jinka
+
+		div.
+			<!-- Piwik --> 
+			<script type="text/javascript">
+			var pkBaseURL = (("https:" == document.location.protocol) ? "https://apache.bitcable.com/piwik/" : "http://apache.bitcable.com/piwik/");
+			document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+			</script><script type="text/javascript">
+			try {
+			var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 6);
+			piwikTracker.trackPageView();
+			piwikTracker.enableLinkTracking();
+			} catch( err ) {}
+			</script><noscript><p><img src="http://apache.bitcable.com/piwik/piwik.php?idsite=6" style="border:0" alt="" /></p></noscript>
+			<!-- End Piwik Tracking Code -->

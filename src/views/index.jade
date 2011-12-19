@@ -1,0 +1,12 @@
+each post in posts
+	div(class='post')
+		div(class='postDate')= post.date
+		a(href="/post/#{post.id}")
+			h1= post.title
+		!= post.body
+
+div(id="pagination")
+	- if(total > 4 && total > (curPage+1)*4)
+		a(href="/page/#{curPage+1}",class="prev") &laquo; older
+	- if(curPage)
+		a(href="/page/#{curPage-1}",class="next") newer &raquo;

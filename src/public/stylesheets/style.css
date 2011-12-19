@@ -1,0 +1,118 @@
+html {
+  background-image: url("/images/bg.png");
+}
+body {
+  padding: 1.3em;
+  font-family: "Ubuntu", sans-serif;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+em {
+  font-style: italic;
+  padding-right: 0.2em;
+}
+a:hover {
+  color: #0075ed;
+}
+#container {
+  width: 90%;
+  max-width: 50em;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.50);
+  border: 0.4em solid rgba(255,255,255,0.50);
+  box-shadow: 0em 0em 1.4em rgba(0,0,0,0.30);
+  -webkit-box-shadow: 0em 0em 1.4em rgba(0,0,0,0.30);
+}
+#top h1 {
+  font-size: 2.8em;
+  font-weight: 300;
+  float: left;
+  margin: 0.2em 0 0em 0.333em;
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+}
+#menu {
+  clear: both;
+  background-color: rgba(255,255,255,0.60);
+}
+#menu a {
+  padding: 1em;
+}
+#top h2 {
+  float: right;
+  line-height: 4.8em;
+  margin-right: 1.3em;
+  font-style: italic;
+  opacity: 0.4;
+  font-size: 0.8em;
+}
+.post {
+  margin: 0.5em 1em 1em 1em;
+}
+.post+.post {
+  border-top: 1px solid rgba(0,0,0,0.10);
+  padding-top: 1.5em;
+  margin-top: 2em;
+}
+.postDate {
+  float: right;
+  font-size: 0.7em;
+  margin-top: 0.7em;
+  opacity: 0.3;
+}
+.post h1 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+.post h2 {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 2em;
+  font-style: italic;
+  margin-top: 1em;
+}
+.post p {
+  line-height: 1.7em;
+  font-size: 0.85em;
+  font-weight: 400;
+  text-align: justify;
+}
+.post p a {
+  color: #0075ed;
+  font-weight: 400;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.10);
+}
+.post img {
+  padding: 1em;
+  max-width: 90%;
+}
+#footer {
+  height: 2em;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.7em;
+  clear: both;
+}
+p+p {
+  margin-top: 1em;
+}
+#comments {
+  margin: 1em;
+  font-size: 0.8em;
+}
+#pagination {
+  width: 6em;
+  margin: 0 auto;
+}
+#pagination .prev {
+  float: left;
+}
+#pagination .next {
+  float: right;
+}
