@@ -11,6 +11,22 @@ CouchDB Views
 -------------
 TODO
 
+The missing piece.
+------------------
+So, `db.js` is missing. I don't want my database credentials floating around the internet. This is the format it should be in:
+
+	var nano = require('nano')('http://USERNAME:PASSWORD@HOSTNAMEorIP:PORT');
+	var db = nano.use('misframe');
+	
+	exports.db = db;
+
+You can probably figure out the rest. `misframe` is obviously the name of my database. Yours will probably be different.
+
+Things to do...
+---------------
+* Categories
+* RSS feeds
+
 License.
 -------
 	Copyright (C) 2011 Preetam Jinka
@@ -32,19 +48,3 @@ License.
 	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
-
-The missing piece.
-------------------
-So, `db.js` is missing. I don't want my database credentials floating around the internet. This is the format it should be in:
-
-	var nano = require('nano')('http://USERNAME:PASSWORD@HOSTNAMEorIP:PORT');
-	var db = nano.use('misframe');
-	
-	exports.db = db;
-
-You can probably figure out the rest. `misframe` is obviously the name of my database. Yours will probably be different.
-
-Things to do...
----------------
-* Categories
-* RSS feeds
