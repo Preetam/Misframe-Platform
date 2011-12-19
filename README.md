@@ -41,4 +41,10 @@ So, `db.js` is missing. I don't want my database credentials floating around the
 	var db = nano.use('misframe');
 	
 	exports.db = db;
+
 You can probably figure out the rest. `misframe` is obviously the name of my database. Yours will probably be different.
+
+Things to do...
+---------------
+* Categories
+* RSS feeds
