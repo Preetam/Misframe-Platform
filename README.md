@@ -5,7 +5,7 @@ I made a Node.js blog platform! This is the code running on http://misfra.me/
 
 Requirements.
 ------------
-Node, NPM, CouchDB. That's pretty much it. I'm using CouchDB 1.0.1.
+Node, NPM, CouchDB. That's pretty much it. I'm using CouchDB 1.0.1 and Node.js 0.6.6.
 
 Document format.
 ----------------
