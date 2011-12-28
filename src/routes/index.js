@@ -1,10 +1,9 @@
 var db = require('../db.js').db;
 
-console.log(db);
-
 exports.about = require('./about.js').about;
 exports.singlePost = require('./singlePost.js').singlePost;
 exports.paginated = require('./paginated.js').paginated;
+exports.rss = require('./rss.js').rss;
 
 exports.index = function(req, res) {
 	db.view('misframe', 'getPosts', {keys: null, limit: 4, descending: true}, function(e1,r1,h1) {

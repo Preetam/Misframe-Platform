@@ -40,6 +40,8 @@ app.get('/page/0', function(req, res) {
 app.get('/page/:page', routes.paginated);
 app.get('/post/:id', routes.singlePost);
 
+app.get('/rss.xml', routes.rss);
+
 app.get('*', function(req, res) {
 	res.redirect('/');
 });
