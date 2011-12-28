@@ -54,7 +54,6 @@ You can probably figure out the rest. `misframe` is obviously the name of my dat
 Things to do...
 ---------------
 * Categories
-* RSS feeds
 
 License.
 -------
