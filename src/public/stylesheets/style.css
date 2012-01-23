@@ -1,118 +1,95 @@
 html {
-  background-image: url("/images/bg.png");
+  height: 100%;
 }
 body {
-  padding: 1.3em;
-  font-family: "Ubuntu", sans-serif;
-  color: #000;
+  font-family: Lato, arial, sans-serif;
+  border-top: 0.5em #000 solid;
+  text-rendering: optimizeLegibility;
+}
+#container {
+  margin: 1em auto;
+  padding-top: 2.5em;
+  max-width: 35em;
+  width: 90%;
 }
 a {
   text-decoration: none;
   color: #000;
-  display: inline-block;
 }
 em {
   font-style: italic;
-  padding-right: 0.2em;
 }
 a:hover {
-  color: #0075ed;
-}
-#container {
-  width: 90%;
-  max-width: 50em;
-  margin: 0 auto;
-  background-color: rgba(255,255,255,0.50);
-  border: 0.4em solid rgba(255,255,255,0.50);
-  box-shadow: 0em 0em 1.4em rgba(0,0,0,0.30);
-  -webkit-box-shadow: 0em 0em 1.4em rgba(0,0,0,0.30);
+  color: #999;
 }
 #top h1 {
-  font-size: 2.8em;
-  font-weight: 300;
-  float: left;
-  margin: 0.2em 0 0em 0.333em;
-  display: inline-block;
-  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  display: inline;
+  font-size: 1.3em;
+}
+#top {
+  text-align: center;
+  padding-bottom: 0.8em;
 }
 #menu {
-  clear: both;
-  background-color: rgba(255,255,255,0.60);
+  width: 100%;
+  font-size: 0.9em;
+  text-align: left;
+  line-height: 3em;
 }
-#menu a {
-  padding: 1em;
-}
-#top h2 {
-  float: right;
-  line-height: 4.8em;
-  margin-right: 1.3em;
-  font-style: italic;
-  opacity: 0.4;
-  font-size: 0.8em;
-}
-.post {
-  margin: 0.5em 1em 1em 1em;
+#menu a+a {
+  margin-left: 1em;
 }
 .post+.post {
-  border-top: 1px solid rgba(0,0,0,0.10);
-  padding-top: 1.5em;
-  margin-top: 2em;
+  margin-top: 1em;
+  border-top: 2px solid #000;
 }
-.postDate {
+.post .postDate {
   float: right;
-  font-size: 0.7em;
-  margin-top: 0.7em;
-  opacity: 0.3;
+  font-size: 0.8em;
+  margin-top: 0.8em;
 }
 .post h1 {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: 700;
-  font-family: "Ubuntu", sans-serif;
-}
-.post h2 {
-  font-size: 1em;
   font-weight: 700;
   line-height: 2em;
+  display: inline;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.5em;
+}
+.post h2 {
+  font-weight: 700;
+  line-height: 3em;
   font-style: italic;
+}
+.post p+p {
   margin-top: 1em;
 }
 .post p {
-  line-height: 1.7em;
-  font-size: 0.85em;
-  font-weight: 400;
   text-align: justify;
 }
+.post blockquote {
+  margin: 1em;
+  padding-left: 0.5em;
+  border-left: 1px solid #e0e0e0;
+  color: #333;
+  font-size: 0.9em;
+}
 .post p a {
-  color: #0075ed;
-  font-weight: 400;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.10);
+  font-weight: 700;
+  text-decoration: underline;
 }
 .post img {
-  padding: 1em;
   max-width: 90%;
-}
-#footer {
-  height: 2em;
-  text-align: center;
-  opacity: 0.6;
-  font-size: 0.7em;
-  clear: both;
-}
-p+p {
-  margin-top: 1em;
-}
-#comments {
-  margin: 1em;
-  font-size: 0.8em;
+  margin: 1em auto;
+  display: block;
 }
 #pagination {
-  width: 6em;
-  margin: 0 auto;
+  text-align: center;
+  line-height: 2em;
 }
-#pagination .prev {
-  float: left;
-}
-#pagination .next {
-  float: right;
+#footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #aaa;
+  margin-top: 1em;
 }

@@ -7,7 +7,7 @@ exports.rss = function(req, res) {
 		var items = '';
 		for(var i in posts) {
                         posts[i] = posts[i].value;
-			items += '<item><title>'+posts[i].title+'</title><link>http://misfra.me/post/'+posts[i].id+'</link></item>';
+			items += '<item><title>'+posts[i].title+'</title><link>http://misfra.me/post/'+posts[i].id+'</link><description>'+posts[i].body.replace(/&mdash;/g,'—')+'</description></item>';
 		}
 		
 		var feed = [

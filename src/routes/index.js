@@ -1,6 +1,8 @@
 var db = require('../db.js').db;
 
 exports.about = require('./about.js').about;
+exports.contact = require('./contact.js').contact;
+
 exports.singlePost = require('./singlePost.js').singlePost;
 exports.paginated = require('./paginated.js').paginated;
 exports.rss = require('./rss.js').rss;
