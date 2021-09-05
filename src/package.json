@@ -1,10 +1,16 @@
 {
-    "name": "Misframe"
-  , "version": "0.0.5"
-  , "private": true
-  , "dependencies": {
-      "express": "2.5.1"
-    , "stylus": ">= 0.0.1"
-    , "jade": ">= 0.0.1"
-  }
+  "name": "Misframe",
+  "version": "0.0.5",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.1",
+    "stylus": ">= 0.0.1",
+    "jade": ">= 0.0.1",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
